@@ -1,0 +1,181 @@
+:root{
+  --letra-principal : #fefdfe;
+  --letra-secundaria : #5e5c5e;
+  --bg-green : #6dc092;
+  --padding-standar : 25px;
+}
+
+*{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+  /*width: 90%;*/
+  margin: 0 auto;
+  position: relative;
+}
+
+.bgImage{
+  width: 100%;
+  z-index: -200;
+  filter: grayscale(100%);
+  opacity: 0.80;
+}
+
+.otraLetra{
+  color: black
+}
+
+.relative{
+  position: relative;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.bgHeader{
+  background-image: url("https://www.blogdelfotografo.com/wp-content/uploads/2020/07/ben-o-bro-wpU4veNGnHg-unsplash.jpg");
+  /*opacity: 0.5;*/
+}
+
+.front{
+  z-index: 100;
+}
+
+nav{
+  overflow: hidden;
+}
+
+nav label{
+  float: left;
+  padding: var(--padding-standar);
+}
+
+nav ul{
+  float: right;
+  list-style-type: none;
+  padding: var(--padding-standar);
+  display: flex;
+}
+
+nav ul li{
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+hr{
+  clear: both;
+}
+
+header{
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  align-items: center;
+}
+
+.articulos{
+  display: flex;
+  justify-content: space-around;
+}
+
+header article{
+  padding: var(--padding-standar);
+}
+
+.imgHeader{
+  width: 75px;
+  height: 75px;
+}
+
+.btn{
+  width: 25%;
+  padding: var(--padding-standar);
+  border: 2px solid var(--bg-green);
+  color: var(--bg-green);
+  border-radius: 50px;
+  background-color: transparent;
+  margin-bottom: 25px;
+}
+
+.btn-reverse{
+  border: 2px solid var(--letra-principal);
+  color: var(--letra-principal);
+}
+
+.btn-section{
+  width: 75%;
+}
+
+.imgSection{
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+}
+
+.elementos{
+  display: flex;
+  padding: var(--padding-standar);
+  justify-content: center;
+  background-color: white;
+}
+
+.elementos section{
+  text-align: center;
+}
+
+.wrapText{
+  max-width: 80%;
+  text-align: left;
+}
+
+p{
+  color: var(--letra-secundaria);
+}
+
+.tituloSection{
+  color: var(--letra-secundaria);
+}
+
+.contacto, footer,footer h5{
+  background-color: var(--bg-green);
+  margin: 0;
+  padding: 0;
+  color: var(--letra-principal);
+}
+
+.contacto{
+  text-align: center;
+}
+
+.primeraParte{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.inputGroup{
+  width: 50%;
+}
+
+.control{
+  width: 50%;
+}
+
+.segundaParte textarea{
+  width: 50%;
+  border-radius: 5px;
+}
+
+footer{
+  text-align: center;
+  padding: var(--padding-standar);
+}
+
+.alignD{
+  text-align: right;
+}
+
+.alignI{
+  text-align: left;
+}
